@@ -1,0 +1,160 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "content1 content2 content3"
+    "footer footer footer";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+
+nav {
+  background: #012838;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+main {
+  background: url('BBQ\ Spread.jpg'), #012838;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content1 {
+  background: url('BBQ\ Sauce.png'), #012838;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content2 {
+  background: url('Saute.png'), #012838;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content3 {
+  background: #012838;
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+footer {
+  background: #01212f;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+a {
+  text-align: center;
+  display: block;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+}
+
+.menu-button{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  float: left;
+}
+.profile-button{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  float: right;
+}
+.checkout-button{
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  float: right;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  float: left;
+}
+.page2 {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  font-family: Stencil Std, fantasy
+
+  .footer-buttons{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    float: right;
+  }
