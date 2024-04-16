@@ -4,42 +4,618 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>replit</title>
+  <title>StarspireEvents</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/de3a034ea2.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-  <div class="container">
+</head>
+ 
+<body>
+
+  <div class="nav-container" id="navContainer">
+      <div class="nav-links" id="navLinks">
+        <div class="exit-btn">
+        <i class="fa fa-times" onclick="hideMenu()"></i> 
+        </div>
+        <ul>
+          <li><button onclick="showthediv('div1')">HOME</button></li>
+          <li><button onclick="showthediv('div2')">ABOUT</button></li>
+          <li><button onclick="showthediv('div3')">SERVICES</button></li>
+          <li><button onclick="showthediv('div4')">EVENTS</button></li>
+          <li><button onclick="showthediv('div5')">CONTACT</button></li>
+        </ul>
+      </div> 
+  </div>
+  
+<div id="div1" class="show">
+  
+    <div class="header">
+      <nav>
+        <a href="https://vrchat.com/home/launch?worldId=wrld_dd0a3fb4-2c93-4d35-9101-08fb8e955dd1"><img src="logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i> 
+          <ul>
+            <li><button onclick="showthediv('div1')">HOME</button></li>
+            <li><button onclick="showthediv('div2')">ABOUT</button></li>
+            <li><button onclick="showthediv('div3')">SERVICES</button></li>
+            <li><button onclick="showthediv('div4')">EVENTS</button></li>
+            <li><button onclick="showthediv('div5')">CONTACT</button></li>
+          </ul>
+        </div> 
+        <i class="fa fa-bars" onclick="showMenu()"></i> 
+      </nav>
+    </div>
+  
+
+  <div>
+    <div class="text-box">
+      <h1>Starspire Night Club</h1>
+      <p>Seeing your friends has never been easier when joining them in <br> our futuristic Meta Worlds.</p>
+      <button onclick="showthediv('div5')" class="hero-btn"> Visit us to Find out More</button>
+    </div>
+  </div>
+  
+
+  <div class="activity">
+    <h1>Fun To Enjoy</h1>
+      <p>Experience a truly out-of-this-world nightlife at our dance club built off an asteroid․</p>
+
+    <div class="row">
+      <div class="events-col">
+        <h3>Music</h3>
+          <p> Starspire's music selection transcends earthly bounds, offering an ethereal blend of pulsating beats and celestial melodies that evoke the wonders of the cosmos. DJs blend earthly rhythms with interstellar sounds, filling each track with cosmic energy, enveloping club-goers in a mesmerizing symphony that transports them on an interstellar journey through sound.</p>
+      </div>
+      <div class="events-col"> 
+        <h3>Games</h3>
+          <p>At Starspire, game choices abound with a cosmic array of adventures, from thrilling space battles to strategic planetary exploration, promising an immersive experience for every player. With cutting-edge technology and boundless imagination, Starspire offers a galaxy of gaming possibilities that transport players to the farthest reaches of the universe.</p>
+      </div>
+      <div class="events-col">
+        <h3>Drinks</h3>
+        <p>Starspire's menu boasts a celestial selection of cosmic cocktails and futuristic libations, each crafted to transport patrons on a journey through the stars.  Whether enjoying a classic Earth-inspired beverage or indulging in a space-themed creation. Our stardust-infused mixes to innovative blends inspired by distant galaxies, every sip is an adventure waiting to be savored.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="locations">
+    <h1> Our Astroid Quadrants</h1>
+      <p>Experience a truly out-of-this-world nightlife at our dance club built off an asteroid․ Enjoy a unique atmosphere while sipping on delicious drinks‚ dancing to the latest music‚ and playing exciting games․ This one-stop-Club offers a memorable experience that is sure to leave you wanting more․</p>
+  
+    <div class="row">
+      <div class="locations-col">
+        <img src="dance.png">
+        <div class="layer">
+          <h3>ALPHA</h3>
+        </div>
+      </div>
+      <div class="locations-col">
+        <img src="gamma.png">
+         <div class="layer">
+          <h3>GAMMA</h3>
+        </div>
+      </div>
+      <div class="locations-col">
+        <img src="delta.png">
+          <div class="layer">
+            <h3>DELTA</h3>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="facilities">
+    <h1>Our Facilities</h1>
+      <p>Starspire Nightclub is a celestial sanctuary where futuristic ambiance meets cosmic indulgence, offering an immersive experience that transports patrons beyond the stars. With its pulsating beats, ethereal décor, and interstellar cocktails, Starspire invites guests to embark on a transcendent journey through the cosmos.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="Hall.png">
+          <h3>SpaceBox Bunker</h3>
+            <p>SpaceBox Bunker pulsates with celestial energy, offering a cosmic sanctuary where revelers lose themselves in the rhythm of the universe.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="chess.png">
+          <h3>Checkmate Chamber</h3>
+            <p>Checkmate Chamber provides a tranquil space for players to engage in strategic duels, enveloped in the quiet intensity of each calculated move.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="bar.png">
+          <h3>Galactic Lounge</h3>
+            <p> The space bar, "Galactic Lounge" offers cosmic libations and an otherworldly ambiance, where patrons can unwind under the glow of distant stars.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews">
+    <h1>Reviews from our Patrons</h1>
+      <p>A digital forum where patrons share their experiences, providing valuable insights and feedback to guide future visitors on their journey through the venue's offerings.</p>
+
+    <div class="row">
+      <div class="reviews-col">
+        <img src="user1.png">
+          <div>
+            <p>Starspire is an interstellar sanctuary, where pulsating beats and ethereal ambiance collide to create an unforgettable cosmic experience, drawing patrons into a mesmerizing journey through the cosmos.</p>
+            <h3>GalacticGhostie</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+      </div>
+      
+      <div class="reviews-col">
+        <img src="user2.png">
+          <div>
+            <p>Starspire: Where dancing aliens and humans unite under one glittering disco ball, proving that even in space, the party never ends... or maybe it's just the zero-gravity cocktails talking!</p>
+            <h3>InterstellarImposter</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h1>Join Today to Receive 15% <br> off your First Visit!</h1>
+    <button onclick="showthediv('div5')" class="hero-btn"> CONTACT US </button>
+  </div>
+
+  <div class="footer">
+    <h4>About Us</h4>
+      <p>Experience a truly out-of-this-world nightlife at our dance club built off an asteroid․ Enjoy a unique atmosphere while sipping on delicious drinks‚ <br> dancing to the latest music‚ and playing exciting games․ This one-stop-Club offers a memorable experience that is sure to leave you wanting more․</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    <p>Made with SVU Computer Science Student <i class="fa fa-heart-o"></i> </p>
+  </div>
+</div>
+
+  
+<div id="div2" class="hide">
+  
+  <div class="sub-header">
     <nav>
-      <div class="image1"><img src="Logo.png" alt="B&BCullinary" /></div>
-      <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
-      <button class="checkout-button"><i class="fa-solid fa-cart-shopping"></i></button>
-      <button class="profile-button"><i class="fa-solid fa-user"></i></button>
+      <a href="index.html"><img src="logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> 
+        <ul>
+          <li onclick="showthediv('div1')">HOME</li>
+          <li onclick="showthediv('div2')">ABOUT</li>
+          <li onclick="showthediv('div3')">SERVICES</li>
+          <li onclick="showthediv('div4')">EVENTS</li>
+          <li onclick="showthediv('div5')">CONTACT</li>
+        </ul>
+      </div> 
+      <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     
-    <main>
-      <button class="page2">
-        <p>AKB'S CHOICE BBQ</p>
-        <p class="page2a">Click HERE to see our prime selections for YOUR grill top.</p>
-      </button>
-    
-    </main>
-    <div id="content1">Shop</div>
-    <div id="content2">Recipies</div>
-    <div id="content3">Reviews</div>
-    <footer>
-      <div class="footer-buttons">
-        <button class="footer-button">Home</button>
-        <button class="footer-button">About</button>
-        <button class="footer-button">Services</button>
-        <button class="footer-button">Contact</button>
-      </div>
-      <p>Copyright © 2018 B&B Culinary LLC - All Rights Reserved.</p>
-    </footer>
+    <div>
+      <h1>About Us</h1> 
+    </div>
   </div>
-  <script src="script.js"></script>
+
+  <div class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>Where the Universe comes to the Party</h1>
+        <p>Welcome to Starspire Night Club, where the cosmos come alive with pulsating beats, celestial ambience, and out-of-this-world experiences. Step into our interstellar sanctuary and immerse yourself in a universe of entertainment. Whether you're looking for an unforgettable night out with friends or seeking to lose yourself in the rhythm of the stars, Starspire is your ultimate destination. With an array of games, electrifying music, and cosmic cocktails that defy gravity, every visit promises an adventure through the galaxies of fun and excitement. Join us as we journey beyond the ordinary and into the infinite possibilities of the night sky</p>
+        <button onclick="showthediv('div4')" class="hero-btn purple-btn">EXPLORE NOW</button>
+      </div>
+      <div class="about-col">
+        <img src="about.jpg">
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="footer">
+      <h4>About Us</h4>
+        <p>Experience a truly out-of-this-world nightlife at our dance club built off an asteroid․ Enjoy a unique atmosphere while sipping on delicious drinks‚ <br> dancing to the latest music‚ and playing exciting games․ This one-stop-Club offers a memorable experience that is sure to leave you wanting more․</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      <p>Made with SVU Computer Science Student <i class="fa fa-heart-o"></i> </p>
+    </div>
+  
+  </div>
+
+
+<div id="div3" class="hide">
+  <div class="sub-header">
+    <nav>
+      <a href="index.html"><img src="logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> 
+        <ul>
+          <li onclick="showthediv('div1')">HOME</li>
+          <li onclick="showthediv('div2')">ABOUT</li>
+          <li onclick="showthediv('div3')">SERVICES</li>
+          <li onclick="showthediv('div4')">EVENTS</li>
+          <li onclick="showthediv('div5')">CONTACT</li>
+        </ul>
+      </div> 
+      <i class="fa fa-bars" onclick="showMenu()"></i>  
+    </nav>
+
+    <div>
+      <h1>Activities</h1> 
+    </div>
+  </div>
+
+
+  <div class="activity">
+    <h1>Fun To Enjoy</h1>
+      <p>Experience a truly out-of-this-world nightlife at our dance club built off an asteroid․</p>
+
+    <div class="row">
+      <div class="events-col">
+        <h3>Music</h3>
+          <p> Starspire's music selection transcends earthly bounds, offering an ethereal blend of pulsating beats and celestial melodies that evoke the wonders of the cosmos. DJs blend earthly rhythms with interstellar sounds, filling each track with cosmic energy, enveloping club-goers in a mesmerizing symphony that transports them on an interstellar journey through sound.</p>
+      </div>
+      <div class="events-col"> 
+        <h3>Games</h3>
+          <p>At Starspire, game choices abound with a cosmic array of adventures, from thrilling space battles to strategic planetary exploration, promising an immersive experience for every player. With cutting-edge technology and boundless imagination, Starspire offers a galaxy of gaming possibilities that transport players to the farthest reaches of the universe.</p>
+      </div>
+      <div class="events-col">
+        <h3>Drinks</h3>
+        <p>Starspire's menu boasts a celestial selection of cosmic cocktails and futuristic libations, each crafted to transport patrons on a journey through the stars.  Whether enjoying a classic Earth-inspired beverage or indulging in a space-themed creation. Our stardust-infused mixes to innovative blends inspired by distant galaxies, every sip is an adventure waiting to be savored.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="facilities">
+    <h1>Our Facilities</h1>
+      <p>Starspire Nightclub is a celestial sanctuary where futuristic ambiance meets cosmic indulgence, offering an immersive experience that transports patrons beyond the stars. With its pulsating beats, ethereal décor, and interstellar cocktails, Starspire invites guests to embark on a transcendent journey through the cosmos.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="Hall.png">
+          <h3>SpaceBox Bunker</h3>
+            <p>SpaceBox Bunker pulsates with celestial energy, offering a cosmic sanctuary where revelers lose themselves in the rhythm of the universe.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="chess.png">
+          <h3>Checkmate Chamber</h3>
+            <p>Checkmate Chamber provides a tranquil space for players to engage in strategic duels, enveloped in the quiet intensity of each calculated move.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="bar.png">
+          <h3>Galactic Lounge</h3>
+            <p> The space bar, "Galactic Lounge" offers cosmic libations and an otherworldly ambiance, where patrons can unwind under the glow of distant stars.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+        <h4>About Us</h4>
+          <p>Experience a truly out-of-this-world nightlife at our dance club built off an asteroid․ Enjoy a unique atmosphere while sipping on delicious drinks‚ <br> dancing to the latest music‚ and playing exciting games․ This one-stop-Club offers a memorable experience that is sure to leave you wanting more․</p>
+          <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+          </div>
+        <p>Made with SVU Computer Science Student <i class="fa fa-heart-o"></i> </p>
+  </div>
+</div>
+
+<div id="div4" class="hide">
+  <div class="sub-header">
+    <nav>
+      <a href="index.html"><img src="logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> 
+        <ul>
+          <li onclick="showthediv('div1')">HOME</li>
+          <li onclick="showthediv('div2')">ABOUT</li>
+          <li onclick="showthediv('div3')">SERVICES</li>
+          <li onclick="showthediv('div4')">EVENTS</li>
+          <li onclick="showthediv('div5')">CONTACT</li>
+        </ul>
+      </div> 
+      <i class="fa fa-bars" onclick="showMenu()"></i>  
+    </nav>
+    <div>
+      <h1>Events</h1> 
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="item-container">
+          <div class="img-container">
+              <img src="photo3.png">
+          </div>
+
+          <div class="body-container">
+              <div class="overlay"></div>
+
+              <div class="event-info">
+                  <p class="title">Celestial Soiree</p>
+                  <div class="separator"></div>
+                  <p class="info">Nova Nexus Station</p>
+                  <p class="price"><i class="fa-brands fa-gg"></i>150 Units</p>
+
+                  <div class="additional-info">
+                      <p class="info">
+                          <i class="fas fa-map-marker-alt"></i>
+                        StarSpire Lounge 
+                      </p>
+                      <p class="info">
+                          <i class="fa-solid fa-calendar-days"></i>
+                        Sat, May 25, 8:30 PM GFT
+                      </p>
+
+                      <p class="info description">
+                          Dance under the stars to electrifying beats, surrounded by cosmic décor. Sip on celestial cocktails and <span>more...</span>
+                      </p>
+                  </div>
+              </div>  
+              <button onclick="showthediv('')" class="action">Book Now</button>
+          </div>
+      </div>
+    <div class="item-container">
+        <div class="img-container">
+            <img src="gamma.png">
+        </div>
+
+        <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+                <p class="title">Galactic Groove</p>
+                <div class="separator"></div>
+                <p class="info">Lunar Lagoon Resort</p>
+                <p class="price"><i class="fa-brands fa-gg"></i>200 Units</p>
+
+                <div class="additional-info">
+                    <p class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                      Nebula's Starspire Club 
+                    </p>
+                    <p class="info">
+                        <i class="fa-solid fa-calendar-days"></i>
+                      Fri, Jul 12, 7:45 PM GFT
+                    </p>
+
+                    <p class="info description">
+                        Dance under the stars to electrifying beats, surrounded by cosmic décor. Sip on celestial cocktails and <span>more...</span>
+                    </p>
+                </div>
+            </div>  
+            <button onclick="showthediv('')" class="action">Book Now</button>
+        </div>
+    </div>
+    <div class="item-container">
+        <div class="img-container">
+            <img src="dance.png">
+        </div>
+
+        <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+                <p class="title">Nebula Night</p>
+                <div class="separator"></div>
+                <p class="info">Asteroid Archipelago</p>
+                <p class="price"><i class="fa-brands fa-gg"></i>250 Units</p>
+
+                <div class="additional-info">
+                    <p class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                      Celestial Spire Nightclub 
+                    </p>
+                    <p class="info">
+                        <i class="fa-solid fa-calendar-days"></i>
+                      Wed, Sep 4, 6:15 PM GFT
+                    </p>
+
+                    <p class="info description">
+                        Dance under the stars to electrifying beats, surrounded by cosmic décor. Sip on celestial cocktails and <span>more...</span>
+                    </p>
+                </div>
+            </div>  
+            <button onclick="showthediv('')" class="action">Book Now</button>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="item-container">
+          <div class="img-container">
+              <img src="photo2.png">
+          </div>
+
+          <div class="body-container">
+              <div class="overlay"></div>
+
+              <div class="event-info">
+                  <p class="title">Starstruck Spectacular</p>
+                  <div class="separator"></div>
+                  <p class="info">Epsilon Eridani Expanse</p>
+                  <p class="price"><i class="fa-brands fa-gg"></i>180 Units</p>
+
+                  <div class="additional-info">
+                      <p class="info">
+                          <i class="fas fa-map-marker-alt"></i>
+                        Stardust Spire Lounge 
+                      </p>
+                      <p class="info">
+                          <i class="fa-solid fa-calendar-days"></i>
+                        Mon, Nov 11, 9:00 PM GFT
+                      </p>
+
+                      <p class="info description">
+                          Dance under the stars to electrifying beats, surrounded by cosmic décor. Sip on celestial cocktails and <span>more...</span>
+                      </p>
+                  </div>
+              </div>  
+              <button onclick="showthediv('')" class="action">Book Now</button>
+          </div>
+      </div>
+    <div class="item-container">
+        <div class="img-container">
+            <img src="photo1.png">
+        </div>
+
+        <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+                <p class="title">Cosmic Carnival</p>
+                <div class="separator"></div>
+                <p class="info">Epsilon Eridani Expanse</p>
+                <p class="price"><i class="fa-brands fa-gg"></i>300 Units</p>
+
+                <div class="additional-info">
+                    <p class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                      Cosmic Summit Club 
+                    </p>
+                    <p class="info">
+                        <i class="fa-solid fa-calendar-days"></i>
+                      Thu, Jan 23, 8:20 PM GFT
+                    </p>
+
+                    <p class="info description">
+                        Dance under the stars to electrifying beats, surrounded by cosmic décor. Sip on celestial cocktails and <span>more...</span>
+                    </p>
+                </div>
+            </div>  
+            <button onclick="showthediv('')" class="action">Book Now</button>
+        </div>
+    </div>
+    <div class="item-container">
+        <div class="img-container">
+            <img src="delta.png">
+        </div>
+
+        <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+                <p class="title">Aurora Affair</p>
+                <div class="separator"></div>
+                <p class="info">Interstellar Inn, Proxima Centauri</p>
+                <p class="price"><i class="fa-brands fa-gg"></i>215 Units</p>
+
+                <div class="additional-info">
+                    <p class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Starshine Night Club 
+                    </p>
+                    <p class="info">
+                        <i class="fa-solid fa-calendar-days"></i>
+                      Sat, Mar 15, 7:00 PM GFT
+                    </p>
+
+                    <p class="info description">
+                        Dance under the stars to electrifying beats, surrounded by cosmic décor. Sip on celestial cocktails and <span>more...</span>
+                    </p>
+                </div>
+            </div>  
+            <button onclick="showthediv('')" class="action">Book Now</button>
+        </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+        <h4>About Us</h4>
+          <p>Experience a truly out-of-this-world nightlife at our dance club built off an asteroid․ Enjoy a unique atmosphere while sipping on delicious drinks‚ <br> dancing to the latest music‚ and playing exciting games․ This one-stop-Club offers a memorable experience that is sure to leave you wanting more․</p>
+          <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+          </div>
+        <p>Made with SVU Computer Science Student <i class="fa fa-heart-o"></i> </p>
+    </div>
+</div>
+
+<div id="div5" class="hide">
+    <div class="sub-header">
+      <nav>
+        <a href="index.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i> 
+          <ul>
+            <li onclick="showthediv('div1')">HOME</li>
+            <li onclick="showthediv('div2')">ABOUT</li>
+            <li onclick="showthediv('div3')">SERVICES</li>
+            <li onclick="showthediv('div4')">EVENTS</li>
+            <li onclick="showthediv('div5')">CONTACT</li>
+          </ul>
+        </div> 
+        <i class="fa fa-bars" onclick="showMenu()"></i>  
+      </nav>
+      <div>
+        <h1>Contact Us</h1> 
+      </div>
+    </div>
+  
+    <div class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6710299.276433273!2d-90.59860777547892!3d34.793025384515715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b96f732598c213%3A0x4f619ea71e109f48!2sNASA!5e0!3m2!1sen!2sus!4v1713133911003!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+
+    <div class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>XYZ Road, 123 Building, </h5>
+              <p>Wallops Island, VA XXXXX-XXXX</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+1 123-456-7890 </h5>
+              <p>Monday to Saturday, 8AM - 11PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>StarspireEvents@Gmail.com</h5>
+              <p>Email us about your query</p>
+            </span>
+          </div>
+        </div>
+        
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter Email Address" required>
+            <input type="text" placeholder="Enter your subject" required>
+            <textarea rows="8" placeholder="Message" required> </textarea>
+            <button type="submit" class="hero-btn purple-btn"">Send Message</button>
+          </form>
+        </div>
+      </div >
+    </div>
+
+    <div class="footer">
+          <h4>About Us</h4>
+            <p>Experience a truly out-of-this-world nightlife at our dance club built off an asteroid․ Enjoy a unique atmosphere while sipping on delicious drinks‚ <br> dancing to the latest music‚ and playing exciting games․ This one-stop-Club offers a memorable experience that is sure to leave you wanting more․</p>
+            <div class="icons">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-linkedin"></i>
+            </div>
+          <p>Made with SVU Computer Science Student <i class="fa fa-heart-o"></i> </p>
+      </div>
+  </div>
+ 
+<script src="script.js"></script>
+  
 </body>
 
 </html>
